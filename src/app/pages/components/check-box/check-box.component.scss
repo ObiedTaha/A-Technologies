@@ -1,0 +1,21 @@
+section {
+    direction: rtl;
+
+    .btn:hover {
+        path {
+            fill: red;
+        }
+    }
+    p{
+        color: #9CA3AF;
+    }
+
+    button {
+        top: 600px;
+        left: 36px;
+        padding: 8px 24px 8px 24px;
+        gap: 8px;
+        border-radius: 4px 0px 0px 0px;
+
+    }
+}
