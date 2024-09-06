@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { SelectionPageComponent } from '../selection-page/selection-page.component';
@@ -6,17 +6,31 @@ import { SelectionPageComponent } from '../selection-page/selection-page.compone
 @Component({
   selector: 'app-choose-home',
   standalone: true,
-  imports: [CommonModule,RouterLink,SelectionPageComponent],
+  imports: [CommonModule, RouterLink, SelectionPageComponent],
   templateUrl: './choose-home.component.html',
   styleUrls: ['./choose-home.component.scss']
 })
 export class ChooseHomeComponent {
-  isLogin:boolean=true;
+  isLogin: boolean = true;
   selectedOption: string = '';
   isSelected: boolean = false;
   // @Input() paragraph:string='';
-  // @Input() descrption:string='';
-  // @Input() srcImage:string='';
+
+  title: string = 'فيلا';
+  srcImage: string = './assets/images/villa.svg';
+  value: string = 'villa';
+
+
+
+secSrcImage:string='./assets/images/flat.svg';
+secTitle:string='شقة دوبليكس';
+secValue:string='doblix';
+
+thirdSrcImage:string='./assets/images/block.svg';
+thirdTitle:string='شقة سكنية';
+thirdValue:string='block';
+  
+btnValue:string='التالي';
 
 
 

@@ -1,38 +1,39 @@
 <div class="radio-container">
 
     <label class="radio-label ">
-        <input type="radio" name="option" [(ngModel)]="selectedOption" value="cairo" (change)="onSelectionChange()" />
+        <input type="radio" name="option" [(ngModel)]="selectedOption" [value]="value" (change)="onSelectionChange()" />
         <span class="radio-button"></span>
         <div class="content d-flex justify-content-center align-items-center flex-column mt-4 p-4">
-            <img src="../../../../assets/images/home.svg" alt="">
-            <p class="mt-3">القاهرة</p>
+            <img [src]="srcImage" alt="">
+            <p class="mt-3"> {{title}} </p>
         </div>
     </label>
 
     <label class="radio-label ">
-        <input type="radio" name="option" [(ngModel)]="selectedOption" value="northCost"
+        <input type="radio" name="option" [(ngModel)]="selectedOption" [value]="secValue"
             (change)="onSelectionChange()" />
         <span class="radio-button"></span>
         <div class="content d-flex justify-content-center align-items-center flex-column mt-4 p-4">
-            <img src="../../../../assets/images/car.svg" alt="">
-            <p class="mt-3">الساحل الشمالي</p>
+            <img [src]="secSrcImage" alt="">
+            <p class="mt-3"> {{secTitle}} </p>
         </div>
     </label>
 
     <label class="radio-label ">
-        <input type="radio" name="option" [(ngModel)]="selectedOption" value="dahb" (change)="onSelectionChange()" />
+        <input type="radio" name="option" [(ngModel)]="selectedOption" [value]="thirdValue" (change)="onSelectionChange()" />
         <span class="radio-button"></span>
         <div class="content d-flex justify-content-center align-items-center flex-column mt-4 p-4">
-            <img src="../../../../assets/images/dublicate.svg" alt="">
-            <p class="mt-3">دهب</p>
+            <img [src]="thirdSrcImage" alt="">
+            <p class="mt-3"> {{thirdTitle}} </p>
         </div>
     </label>
 
 </div>
 <div class="">
-    <button routerLink="/checkBox" routerLinkActive="router-link-active" [disabled]="!isSelected"
+    <!-- wnat to binding at routerlink -->
+    <button routerLink="routerLink"  [disabled]="!isSelected"
         class="btn btn-primary d-block me-auto"> 
-        <img src="../../../../assets/images/Primary.svg" alt="">
-        <span class="mx-2">أبدأ الأن</span>
+        <img [src]="btnIcon" alt="">
+        <span class="mx-2"> {{btnValue}} </span>
     </button>
 </div>

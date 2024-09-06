@@ -22,7 +22,7 @@
 
     <div class="d-flex justify-content-center align-items-center  w-25 m-auto position-relative">
         <div>
-            <h2 class="h3">أختر نوع المنزل</h2>
+            <h2 class="h3 text-center">أختر نوع المنزل</h2>
            <p class="text-muted">قم بأختيار مصدر شقك الأسكانية كل تستكمل باقي الخطوات</p>
         </div>
         <img class="position-absolute top-0 end-0" src="./assets/images/small star.svg" alt="">
@@ -30,7 +30,12 @@
     </div>
 
     <div>
-        <app-selection-page></app-selection-page>
+        <app-selection-page 
+        [srcImage]="srcImage"  [title]="title" [value]="value"
+        [secSrcImage]="secSrcImage"  [secTitle]="secTitle" [secValue]="secValue"
+        [thirdSrcImage]="thirdSrcImage"  [thirdTitle]="thirdTitle" [thirdValue]="thirdValue"
+        [btnValue]="btnValue"
+         ></app-selection-page>
     </div>
 
     <div class="my-4 text-center">

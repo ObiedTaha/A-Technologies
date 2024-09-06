@@ -16,6 +16,8 @@ export class RadioCardComponent {
   // @Input() paragraph:string='';
   // @Input() descrption:string='';
   // @Input() srcImage:string='';
+  @Input() title:string='';
+  @Input() srcImage:string='';
 
 
 
