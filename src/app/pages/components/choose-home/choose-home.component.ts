@@ -31,6 +31,7 @@ thirdTitle:string='شقة سكنية';
 thirdValue:string='block';
   
 btnValue:string='التالي';
+routes:string='/dreamHouse'
 
 
 

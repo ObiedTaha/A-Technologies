@@ -31,7 +31,7 @@
 </div>
 <div class="">
     <!-- wnat to binding at routerlink -->
-    <button routerLink="routerLink"  [disabled]="!isSelected"
+    <button [routerLink]="[routes]" routerLinkActive="router-link-active"   [disabled]="!isSelected"
         class="btn btn-primary d-block me-auto"> 
         <img [src]="btnIcon" alt="">
         <span class="mx-2"> {{btnValue}} </span>

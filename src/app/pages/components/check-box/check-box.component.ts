@@ -31,4 +31,6 @@ export class CheckBoxComponent {
   btnValue: string = 'أبدأ الأن';
   btnIcon: string = './assets/images/Primary.svg';
 
+  routes:string='/choosehome'
+
 }

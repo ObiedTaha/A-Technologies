@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-selection-page',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,RouterLink],
   templateUrl: './selection-page.component.html',
   styleUrls: ['./selection-page.component.scss']
 })
@@ -29,7 +30,7 @@ export class SelectionPageComponent {
   @Input() btnValue:string='';
   @Input() btnIcon:string='';
 
-  //  @Input() routerLink: string | any[];
+   @Input() routes: string | any[]=[];
 
 
   // Optional: Use this method to perform an action when a selection is made
