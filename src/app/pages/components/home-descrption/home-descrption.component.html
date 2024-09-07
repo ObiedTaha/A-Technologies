@@ -1,0 +1,117 @@
+<section class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center container-fluid mt-2">
+
+        <div>
+            <button routerLink="/" routerLinkActive="router-link-active" class="btn  p-0"><img
+                    src="../../../../assets/images/arrow-right.svg" alt="">
+                <span class="px-1">العودة</span>
+            </button>
+        </div>
+
+        <div>
+            <button class="btn p-0" (click)="isLogin=false">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.0185547" y="0.856384" width="26" height="26" rx="7.1128" fill="#F4F4F4" />
+                    <path
+                        d="M11.7052 13.8546L8.856 11.0063C8.49675 10.6472 8.49675 10.0528 8.856 9.69366C9.21525 9.33453 9.80988 9.33453 10.1691 9.69366L13.0184 12.5419L15.8676 9.69366C16.2269 9.33453 16.8215 9.33453 17.1808 9.69366C17.54 10.0528 17.54 10.6472 17.1808 11.0063L14.3315 13.8546L17.1808 16.7028C17.54 17.062 17.54 17.6564 17.1808 18.0155C16.9949 18.2013 16.7596 18.288 16.5242 18.288C16.2888 18.288 16.0534 18.2013 15.8676 18.0155L13.0184 15.1673L10.1691 18.0155C9.98331 18.2013 9.74794 18.288 9.51256 18.288C9.27719 18.288 9.04182 18.2013 8.856 18.0155C8.49675 17.6564 8.49675 17.062 8.856 16.7028L11.7052 13.8546Z"
+                        fill="#84929E" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center  w-25  mt-3 ">
+        <div>
+            <h2 class=" text-center mt-3 mb-0">قم بكتابة نص الرسالة المرسلة</h2>
+            <p class="p-0 mb-5">قم بتسمية حملتك و تاريخ إرسال الحملة المتوقع</p>
+        </div>
+
+    </div>
+
+    <div>
+        <form>
+            <div class="form-group">
+                <div class="navDescrption p-2">
+                    <div class="position-relative">
+                        <img src="../../../../assets/images/calendar-tick.svg" alt="">
+                        <span class="px-2">تصميم المنزل</span>
+                        
+                        <div class="smallMessageIcon  ">
+                            <img src="../../../../assets/images/small message.svg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex text-center  align-items-center gap-2" >
+                        <div class="form-check right-align">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="modern">
+                            <label class="form-check-label" for="modern">
+                              تصميم حديث
+                            </label>
+                          </div>
+                          <div class="form-check right-align">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="smart-modern" checked>
+                            <label class="form-check-label" for="smart-modern">
+                              تصميم حديث وذكي
+                            </label>
+                          </div>
+                          
+                    </div>
+
+                </div>
+                   
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class=" ">
+        
+
+        <form>
+            <div class="form-group">
+                <div class="navIcon p-2">
+                    <div>
+                        <img src="../../../../assets/images/eye.svg" alt="">
+                        <span class="px-2">معاينة وصف المنزل</span>
+                    </div>
+                    
+                    <div class="d-flex text-center  align-items-center">
+                        <p class="">الموضوع:</p>
+                        <h5 class="h6 px-2">فيلا قريبة من التجمع الخامس</h5>
+                    </div>
+
+                </div>
+                <textarea class="form-control border-top-0 rounded-top-0 p-1" name="description" id="description"
+                    rows="10">
+عزيزي [اسم العميل]،
+نحن في [اسم الشركة] نسعى دائمًا لتقديم أفضل الحلول التي تلبي احتياجاتك وتجعل حياتك أسهل. لذلك، يسعدنا أن نعلن عن إطلاق ميزات جديدة ومثيرة في منصتنا!
+ما الجديد؟
+ميزة X: التي تتيح لك [وصف مختصر للميزة وفائدتها].
+ميزة Y: لتمكينك من [وصف مختصر للميزة وفائدتها].
+ميزة Z: التي تساعدك على [وصف مختصر للميزة وفائدتها].
+لماذا تختار [اسم الشركة]؟
+خدمة عملاء متميزة: نحن هنا لدعمك على مدار الساعة.
+أسعار تنافسية: احصل على أفضل قيمة مقابل ما تدفعه.
+أمان وثقة: نحن نحافظ على سرية معلوماتك وأمانها.
+عرض خاص! احصل على خصم بنسبة [نسبة الخصم]% عند استخدام الكود NEWFEATURES أثناء عملية الشراء. العرض ساري حتى [تاريخ انتهاء العرض].
+لا تفوت الفرصة! انقر هنا للاكتشاف الآن: [رابط الموقع]
+إذا كان لديك أي استفسارات أو تحتاج إلى مساعدة، لا تتردد في الاتصال بنا على [بيانات الاتصال].
+شكرًا لاختيارك [اسم الشركة]. نحن نتطلع إلى خدمتك وتقديم أفضل تجربة ممكنة لك.
+مع أطيب التحيات، فريق [اسم الشركة]
+                </textarea>
+            </div>
+        </form>
+
+        <div>
+            <button routerLink="/sendingMessage" class="btn btn-primary px-5  py-1 m-auto d-block">الخطوة التالية</button>
+            <p class="text-muted text-center py-4">قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل</p>
+        </div>
+
+    </div>
+
+
+
+
+</section>

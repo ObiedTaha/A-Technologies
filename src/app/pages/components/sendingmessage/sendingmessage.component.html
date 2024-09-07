@@ -1,0 +1,48 @@
+<section class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center container-fluid mt-2">
+
+        <div>
+            <button routerLink="/" routerLinkActive="router-link-active" class="btn  p-0"><img
+                    src="../../../../assets/images/arrow-right.svg" alt="">
+                <span class="px-1">العودة</span>
+            </button>
+        </div>
+
+        <div>
+            <button class="btn p-0" (click)="isLogin=false">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.0185547" y="0.856384" width="26" height="26" rx="7.1128" fill="#F4F4F4" />
+                    <path
+                        d="M11.7052 13.8546L8.856 11.0063C8.49675 10.6472 8.49675 10.0528 8.856 9.69366C9.21525 9.33453 9.80988 9.33453 10.1691 9.69366L13.0184 12.5419L15.8676 9.69366C16.2269 9.33453 16.8215 9.33453 17.1808 9.69366C17.54 10.0528 17.54 10.6472 17.1808 11.0063L14.3315 13.8546L17.1808 16.7028C17.54 17.062 17.54 17.6564 17.1808 18.0155C16.9949 18.2013 16.7596 18.288 16.5242 18.288C16.2888 18.288 16.0534 18.2013 15.8676 18.0155L13.0184 15.1673L10.1691 18.0155C9.98331 18.2013 9.74794 18.288 9.51256 18.288C9.27719 18.288 9.04182 18.2013 8.856 18.0155C8.49675 17.6564 8.49675 17.062 8.856 16.7028L11.7052 13.8546Z"
+                        fill="#84929E" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class=" text-center">
+        <h2 class=" text-center mt-3 mb-2">جاري إرسال رسالتك الأسكانية</h2>
+        <p class="p-0 mb-5">الرجاء الأنتظار بعض الدقائق فقط</p>
+    </div>
+
+
+    <div class="text-center mb-5">
+        <img src="../../../../assets/images/sending.svg" alt="" srcset="">
+    </div>
+
+
+
+    <div class=" w-50  m-auto p-0 mt-5">
+        <div>
+            <p class="mb-0">جاري الارسال</p>
+        </div> 
+        <p-toast class="p-0" />
+        <p-progressBar [value]="value" />
+    </div>
+
+
+
+
+</section>

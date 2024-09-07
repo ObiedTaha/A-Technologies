@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     font-family: Neo Sans Arabic;
+    section{
+        direction: rtl;
+        .btn:hover {
+            path {
+                fill: red;
+            }
+        }
+        p{
+            color: #9CA3AF;
+        }
+    
+        button {
+            top: 600px;
+            left: 36px;
+            padding: 8px 24px 8px 24px;
+            gap: 8px;
+            border-radius: 4px 0px 0px 0px;
+    
+        }
+    }
 }

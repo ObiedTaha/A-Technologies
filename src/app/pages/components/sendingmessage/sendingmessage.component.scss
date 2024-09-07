@@ -1,0 +1,65 @@
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.smallMessageIcon {
+    position: absolute;
+    top: -90px;
+    left: 20px;
+    z-index: -10;
+}
+
+.right-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    /* Right-to-left direction */
+}
+
+.right-align .form-check-input {
+    margin-left: 2px;
+    /* Adjust this value as needed */
+}
+
+.right-align .form-check-label {
+    margin-right: 2px;
+    /* Adjust this value as needed */
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+    label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .navDescrption {
+        background-color: #F2F4F7;
+        border: 1px solid #D3D6DC;
+        border-radius: 8px;
+    }
+
+    .navIcon {
+        background-color: #F2F4F7;
+        border: 1px solid #D3D6DC;
+        border-radius: 8px;
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        textarea {
+            outline: 0;
+            height: 150px;
+            /* Static height */
+            width: 300px;
+            /* Static width, adjust as needed */
+            resize: none;
+
+        }
+
+    }
+}
